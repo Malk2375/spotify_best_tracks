@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Spotify Playlist{% endblock %}
+
+{% block body %}
+    <article>
+        <header>
+            <h1>Bonjour , Votre playlist spotify est mise a jour</h1>
+        </header>
+        <h3></h3>
+        <ul>
+            {% for item in tracks.items %}
+                <li>{{ item.track.name }} - {{ item.track.artists[0].name }}</li>
+            {% endfor %} 
+        </ul>
+    </article>
+{% endblock %}
