@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home Page
+{% endblock %}
+
+{% block body %}
+	<article>
+		<header>
+			<h1>Bonjour Dorbani, Vous voulez generer une playlist avec les morceaux les plus ecoutés ces 30 derniers jours?</h1>
+		</header>
+		<h3>Cliquer sur generer et c'est fait</h3>
+    <a type="button" class="btn btn-info mb-3" href="{{ path('app_spotify_update_my_playlist')}}">Generer</a>
+	</article>
+{% endblock %}
+
